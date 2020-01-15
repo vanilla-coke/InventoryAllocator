@@ -3,7 +3,7 @@ InventoryAllocator - Back-end Challenge - compute the best way an order can be s
 
 Deliverr Challenge: Darren Pankoff - Janurary 15th
 
-To run the code do the following:
+To run the code after cloning do the following:
 
 - cd InventoryAllocator/src
 - npm install
