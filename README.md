@@ -5,6 +5,6 @@ Deliverr Challenge: Darren Pankoff - Janurary 15th
 
 To run the code do the following:
 
-- cd ./src
+- cd InventoryAllocator/src
 - npm install
 - npm test
