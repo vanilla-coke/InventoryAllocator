@@ -19,7 +19,7 @@ describe( " Testing Inventory Allocator for warehouse shipping " , () => {
 
     describe( " computing possible orders " , () => {
 
-        it( " Should return an array of objects that contain the correct quantity of items required, all sources from a SINGLE warehouse " , (done) => {
+        it( " Should return an array of objects that contain the correct quantity of items required, all sources from a SINGLE warehouse " , ( done ) => {
     
             let testItems = { apple: 4, pear: 2, pineapple: 2 };
             let expected_results = [
@@ -29,8 +29,8 @@ describe( " Testing Inventory Allocator for warehouse shipping " , () => {
               ];
             let results = allocator.calculateCheapestShipment( testItems, testWarehouses );
 
-            expect(results.length).to.equal(3);
-            expect(JSON.stringify(results)).to.equal(JSON.stringify(expected_results));
+            expect( results.length ).to.equal( 3 );
+            expect( JSON.stringify( results )).to.equal( JSON.stringify( expected_results ));
             /*
             NOTE: uncomment this section if you wish to see a more verbose output from the tests
             console.log("EXPECTED RESULTS TEST " + test_no);
@@ -53,7 +53,7 @@ describe( " Testing Inventory Allocator for warehouse shipping " , () => {
             let results = allocator.calculateCheapestShipment( testItems, testWarehouses );
 
             expect( results.length ).to.equal( 3 );
-            expect( JSON.stringify( results ) ).to.equal( JSON.stringify( expected_results ) );
+            expect( JSON.stringify( results )).to.equal( JSON.stringify( expected_results ));
             /*
             NOTE: uncomment this section if you wish to see a more verbose output from the tests
             console.log("EXPECTED RESULTS TEST " + test_no);
@@ -74,8 +74,8 @@ describe( " Testing Inventory Allocator for warehouse shipping " , () => {
               ];
             let results = allocator.calculateCheapestShipment( testItems, testWarehouses );
 
-            expect(results.length).to.equal(2);
-            expect(JSON.stringify(results)).to.equal(JSON.stringify(expected_results));
+            expect( results.length ).to.equal( 2 );
+            expect( JSON.stringify( results )).to.equal( JSON.stringify( expected_results ));
             /*
             NOTE: uncomment this section if you wish to see a more verbose output from the tests
             console.log("EXPECTED RESULTS TEST " + test_no);
@@ -95,7 +95,7 @@ describe( " Testing Inventory Allocator for warehouse shipping " , () => {
             let testItems = { apple: 7, pear: 3, pineapple: 10 };
             let results = allocator.calculateCheapestShipment( testItems, testWarehouses );
 
-            expect(results.length).to.equal(0);
+            expect( results.length ).to.equal( 0 );
             /*
             NOTE: uncomment this section if you wish to see a more verbose output from the tests
             console.log("RESULTS TEST " + test_no);
@@ -110,7 +110,7 @@ describe( " Testing Inventory Allocator for warehouse shipping " , () => {
             let testItems = { suagr: 4, grapefruit: 2, carrots: 2 };
             let results = allocator.calculateCheapestShipment( testItems, testWarehouses );
 
-            expect(results.length).to.equal(0);
+            expect( results.length ).to.equal( 0 );
             /*
             NOTE: uncomment this section if you wish to see a more verbose output from the tests
             console.log("RESULTS TEST " + test_no);
@@ -125,7 +125,7 @@ describe( " Testing Inventory Allocator for warehouse shipping " , () => {
             let testItems = { };
             let results = allocator.calculateCheapestShipment( testItems, testWarehouses );
 
-            expect(results.length).to.equal(0);
+            expect( results.length ).to.equal( 0 );
             /*
             NOTE: uncomment this section if you wish to see a more verbose output from the tests
             console.log("RESULTS TEST " + test_no);
@@ -141,7 +141,7 @@ describe( " Testing Inventory Allocator for warehouse shipping " , () => {
             let empty_warehouse = [];
             let results = allocator.calculateCheapestShipment( testItems, empty_warehouse );
 
-            expect(results.length).to.equal(0);
+            expect( results.length ).to.equal( 0 );
             /*
             NOTE: uncomment this section if you wish to see a more verbose output from the tests
             console.log("RESULTS TEST " + test_no);
