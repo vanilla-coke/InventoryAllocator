@@ -1,0 +1,16 @@
+{
+  "name": "devlierr_takehome",
+  "version": "1.0.0",
+  "description": "take home for deliverr",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./tests/tests.js"
+  },
+  "author": "Darren Pankoff",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chair": "0.0.0",
+    "mocha": "^7.0.0"
+  }
+}
